@@ -1,10 +1,12 @@
 from enum import Enum
 from datetime import datetime
+from mytodo import db
 
 
 class Status(Enum):
     UNCOMPLETED = "Uncompleted"
     COMPLETED = "Completed"
+
 
 class Todo(db.Model):
     __tablename__ = "todo"
